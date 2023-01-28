@@ -1,0 +1,112 @@
+.header__contact-info {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .contact-info__title {
+    position: relative;
+    padding-bottom: 3px;
+    background: var(--webkit-linear-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .contact-info__subtitle {
+    padding: 5px 0px;
+    background: var(--info__subtitle-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .list {
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .list__item {
+    padding-top: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-size: contain;
+  }
+  
+  .list__icon-mail {
+    position: absolute;
+    background-color: var(--white-color);
+    mask-image: url('../header-img/bx-envelope.svg');
+    -webkit-mask-image: url('../header-img/bx-envelope.svg');
+    width: 24px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+  }
+  
+  .list__contact-text {
+    padding-left: 30px;
+    color: var(--white-color);
+    font-weight: 600;
+    z-index: 4;
+  }
+  
+  .list__contact-text:hover {
+    color: var(--crimson-color);
+  }
+  
+  .list__icon-phone {
+    position: absolute;
+    background-color: var(--white-color);
+    top: 0px;
+    left: 0px;
+    mask-image: url('../iheader-img/bx-phone.svg');
+    -webkit-mask-image: url('../header-img/bx-phone.svg');
+    width: 24px;
+    height: 100%;
+  }
+  
+  .list__icon-location {
+    position: absolute;
+    background-color: var(--white-color);
+    top: 0px;
+    left: 0px;
+    mask-image: url('../header-img/bxs-location-plus.svg');
+    -webkit-mask-image: url('../header-img/bxs-location-plus.svg');
+    width: 24px;
+    height: 100%;
+  }
+  
+  .list__icon-telegram {
+    position: absolute;
+    background-color: var(--white-color);
+    top: 0px;
+    left: 0px;
+    mask-image: url('../header-img/bxl-telegram.svg');
+    -webkit-mask-image: url('../header-img/bxl-telegram.svg');
+    width: 24px;
+    height: 100%;
+  }
+  
+  .list__icon-viber {
+    position: absolute;
+    background-color: var(--white-color);
+    top: 0px;
+    left: 0px;
+    mask-image: url('../header-img/viber_icon_160768.svg');
+    -webkit-mask-image: url('../header-img/viber_icon_160768.svg');
+    width: 24px;
+    height: 100%;
+  }
+  
+  .list__icon-github {
+    position: absolute;
+    background-color: var(--white-color);
+    top: 0px;
+    left: 0px;
+    mask-image: url('../header-img/bxl-github.svg');
+    -webkit-mask-image: url('../header-img/bxl-github.svg');
+    width: 24px;
+    height: 100%;
+  }

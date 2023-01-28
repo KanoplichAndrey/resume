@@ -1,0 +1,48 @@
+.logo {
+    position: relative;
+    background: url('../logo-img/image0.jpeg') no-repeat;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-size: cover;
+    border: solid 6px var(--logo-border-color);
+    transition: all 0.5s ease;
+    margin-left: 80px;
+  }
+  
+  .logo__spiner {
+    position: absolute;
+    border: 2px solid var(--white-color);
+    border-top: 2px solid var(--spiner-color);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    top: -21px;
+    left: -21px;
+  }
+  
+  .logo__spiner:hover {
+    border-top: 2px solid var(--crimson-color);
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @-webkit-keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }

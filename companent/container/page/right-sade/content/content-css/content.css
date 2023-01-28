@@ -1,0 +1,46 @@
+.content_paddig-education {
+    padding-top: 40px;
+  }
+  
+  .content__title {
+    background: var(--primary-color);
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    box-shadow: var(--content-title-box-shadow);
+    border-radius: 4px;
+  }
+  
+  .content__list {
+    padding-top: 20px;
+    color: var(--light-gray-color);
+  }
+  
+  .content__list_mod {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: baseline;
+  }
+  
+  .content__well {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .content__time-period {
+    font-size: 14px;
+    grid-template-columns: -webkit-max-content;
+    grid-template-columns: max-content;
+    display: grid;
+    padding-left: 10px;
+    font-weight: 700;
+  }
+  
+  .content__item-text {
+    padding-top: 10px;
+  }
+  
+  .content__about {
+    padding-bottom: 10px;
+  }

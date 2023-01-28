@@ -1,0 +1,257 @@
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content_paddig {
+    padding-top: 20px;
+    display: grid;
+    justify-items: center;
+  }
+
+  .content_paddig-education {
+    display: grid;
+    justify-items: center;
+  }
+
+  .content__title {
+    text-align: center;
+  }
+
+  .skills_block_padding1 {
+    padding-top: 390px;
+  }
+
+  .skills__title {
+    text-align: center;
+  }
+
+  .skills_block_padding2 {
+    padding-top: 30px;
+  }
+
+  .left-side_mod {
+    padding: 20px;
+  }
+
+  .right-side_mod {
+    padding: 20px;
+  }
+
+  .hard-skills {
+    padding-top: 0px;
+  }
+
+  .hard-skills__title {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .hard-skills__list {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 740px) {
+  .header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .logo {
+    margin-left: 0px;
+  }
+
+  .settings-block__lang-ru {
+    top: 12%;
+  }
+
+  .settings-block__lang-en {
+    top: 20%;
+  }
+
+  .settings-block__theme-day {
+    top: 28%;
+  }
+
+  .settings-block__theme-night {
+    top: 36%;
+  }
+
+  .skills_block_padding1 {
+    padding-top: 610px;
+  }
+
+  .header__contact-info {
+    display: grid;
+    justify-items: center;
+    padding-top: 25px;
+  }
+
+  .header__left-side {
+    padding-top: 25px;
+  }
+
+  .content__time-period {
+    padding-left: 0px;
+    padding-top: 5px;
+  }
+
+  .content__list_mod {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 520px) {
+  .header__contact-info h1 {
+    font-size: calc(20px + 12 * (100vw - 320px) / 960);
+  }
+
+  .header__contact-info h3 {
+    font-size: calc(14px + 5 * (100vw - 320px) / 960);
+    text-align: center;
+  }
+
+  .list__contact-text {
+    font-size: calc(14px + 2 * (100vw - 320px) / 960);
+  }
+}
+
+@media (max-width: 470px) {
+  .slider__btn {
+    display: none;
+  }
+
+  .slider__btn {
+    display: none;
+  }
+
+  .left-side_mod,
+  .right-side_mod {
+    padding: calc(15px + (40 - 15) * ((100vw - 320px) / (1280 - 320)));
+  }
+
+  .header__left-side {
+    padding-top: 41px;
+  }
+}
+
+@media (max-width: 380px) {
+  .settings-block__lang-ru {
+    top: 10%;
+    left: 3%;
+  }
+
+  .settings-block__lang-en {
+    top: 47%;
+    left: 3%;
+  }
+
+  .settings-block__theme-day {
+    top: 47%;
+    left: 80%;
+  }
+
+  .settings-block__theme-night {
+    left: 80%;
+    top: 10%;
+  }
+
+  .header__left-side {
+    padding-top: 89px;
+    padding-bottom: 47px;
+  }
+
+  .skills_block_padding1 {
+    padding-top: 720px;
+  }
+}
+
+@media (max-width: 270px) {
+  .header__contact-info {
+    padding-top: 0px;
+  }
+
+  .header__contact-info h1 {
+    text-align: center;
+  }
+
+  .skills_block_padding1 {
+    padding-top: 670px;
+  }
+
+  .skills_block_padding2 {
+    padding-top: 0px;
+  }
+
+  .content__title {
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+  }
+
+  .wrap-btn__btn-ru {
+    top: 2%;
+    left: 39%;
+  }
+
+  .wrap-btn__btn-en {
+    top: 2%;
+    left: 68%;
+  }
+
+  .wrap-btn__btn_ru {
+    top: 9%;
+    left: 39%;
+  }
+
+  .wrap-btn__btn_en {
+    top: 9%;
+    left: 68%;
+  }
+}
+
+@media (hover: hover) {
+  .contact-info__title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    transition: opacity 300ms, transform 300ms;
+    transition: opacity 300ms, transform 300ms -webkit-transform 300ms;
+    background: var(--info__subtitle-color);
+  }
+
+  .contact-info__title:hover::after,
+  .contact-info__title:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+
+  .contact-info__title::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+
+  .contact-info__title:hover::after,
+  .contact-info__title:focus::after {
+    transform: scale(1);
+  }
+}
+
+@media (hover: none) {
+  .contact-info__title {
+    border-bottom: solid 3px var(--info__subtitle-color);
+  }
+
+  .list__contact-text:hover {
+    color: var(--crimson-color);
+  }
+}

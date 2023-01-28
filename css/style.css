@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
+
+@import url('../companent/container/header/header-css/header.style.css');
+@import url('../companent/container/header/settings-block/settings-block-css/settings-block.css');
+@import url('../companent/container/header/logo/logo-css/logo.css');
+@import url('../companent/container/header/contact-info/contact-info-css/contact-info.css');
+@import url('../companent/container/page/left-side/left-side-css/left-side.css');
+@import url('../companent/container/page/right-sade/right-side-css/right-side.css');
+@import url('../companent/container/page/right-sade/content/content-css/content.css');
+@import url('../companent/container/page/right-sade/slider/slider-css/slider.css');
+@import url('../companent/scrollFunction/scrollFunction-css/scrollFunction.css');
+@import url('../companent/container/page/right-sade/modal/modal-css/modal.css');
+
+
+
+:root {
+  --primary-color: #99C7C7;
+  --stack-color: #3cf6f6;
+  --white-color: #fff;
+  --light-gray-color: #808080;
+  --light-gray-color-percent: #a69e9e;
+  --crimson-color: #ed143d;
+  --black-color: #000000;
+  --container-box-shadow-color: 0 35px 55px rgba(0, 0, 0, 70%);
+  --header-box-shadow-color: 0 17px 29px rgba(0, 0, 0, 65%);
+  --btn-box-shadow-color: 0 -4px 0 rgb(0 0 0 / 35%) inset;
+  --content-title-box-shadow: 0 -4px 0 rgb(0 0 0 / 37%) inset;
+  --slider-btn-color: #fff;
+  --slider-indicator-color: rgba(255, 255, 255, 0.5);
+  --hover-title-botom-color: #b4924d;
+
+  --body-color: #99C7C7;
+  --header: #99C7C7;
+  --left-side-color: #808080;
+  --right-side-color: #fff;
+  --header-title-color: #fff;
+  --wrap-btn-active: #fff;
+  --webkit-linear-gradient: #000;
+  --info__subtitle-color: #808080;
+  --slide-btn-active-color: rgb(36, 33, 33);
+  --spiner-color: #3cf6f6;
+  --logo-border-color: #fff;
+}
+
+.dark-mode {
+  --body-color: #000000c7;
+  --header: #1c1b1b;
+  --left-side-color: #000000e8;
+  --right-side-color: #000000c7;
+  --header-title-color: #f5deb3;
+  --white-color: #808080;
+  --wrap-btn-active: #e6c384;
+  --webkit-linear-gradient: linear-gradient(to left, #d4a959 13%, #c5c09b 50%, #d4a959 87%);
+  --info__subtitle-color: linear-gradient(to left, #d4a959 13%, #c5c09b 51%, #d4a959 87%);
+  --slider-btn-color: rgba(247, 247, 247, 0);
+  --slide-btn-active-color: #e9deca;
+  --spiner-color: #cfa048;
+  --logo-border-color: #cfa048;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Libre Caslon Text", serif;
+  text-decoration: none;
+}
+
+body {
+  background: var(--body-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  min-height: 1000px;
+  margin: 50px;
+  background: var(--white-color);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: var(--container-box-shadow-color);
+}
