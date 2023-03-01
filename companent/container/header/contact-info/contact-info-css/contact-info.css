@@ -10,7 +10,15 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transform: translate( 0px,120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
   }
+.contact-info__title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  
   
   .contact-info__subtitle {
     padding: 5px 0px;
@@ -18,6 +26,16 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    transform: translate( 0px,120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+  }
+
+  .contact-info__subtitle._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s;
   }
   
   .list {
@@ -32,13 +50,75 @@
     align-items: center;
     cursor: pointer;
     background-size: contain;
+
+    
+  }
+  .anim1{
+    transform: translate(291%, 630%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+  }
+  .anim1._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.6s;
+  }
+  .anim2{
+    transform: translate(291%, 630%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+  }
+  .anim2._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.7s;
+  }
+  .anim3{
+    transform: translate(291%, 630%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+  }
+  .anim3._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.8s;
+  }
+  .anim4{
+    transform: translate(291%, 630%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+  }
+  .anim4._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.9s;
+  }
+  .anim5{
+    transform: translate(291%, 630%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+  }
+  .anim5._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 1s;
+  }
+  .anim6{
+    transform: translate(291%, 630%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+  }
+  .anim6._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 1.1s;
   }
   
   .list__icon-mail {
     position: absolute;
     background-color: var(--white-color);
-    mask-image: url('../header-img/bx-envelope.svg');
-    -webkit-mask-image: url('../header-img/bx-envelope.svg');
+    mask-image: url('../contact-info-img/bx-envelope.svg');
+    -webkit-mask-image: url('../contact-info-img/bx-envelope.svg');
     width: 24px;
     height: 100%;
     top: 0px;
@@ -50,10 +130,18 @@
     color: var(--white-color);
     font-weight: 600;
     z-index: 4;
+    background: linear-gradient( to right, transparent, transparent),
+    linear-gradient(to right, #d4a959 , #c5c09b , #d4a959, #fff  );
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
   }
   
   .list__contact-text:hover {
     color: var(--crimson-color);
+    background-size: 0 2px, 100% 2px;
+
   }
   
   .list__icon-phone {
@@ -61,8 +149,8 @@
     background-color: var(--white-color);
     top: 0px;
     left: 0px;
-    mask-image: url('../iheader-img/bx-phone.svg');
-    -webkit-mask-image: url('../header-img/bx-phone.svg');
+    mask-image: url('../contact-info-img/bx-phone.svg');
+    -webkit-mask-image: url('../contact-info-img/bx-phone.svg');
     width: 24px;
     height: 100%;
   }
@@ -72,8 +160,8 @@
     background-color: var(--white-color);
     top: 0px;
     left: 0px;
-    mask-image: url('../header-img/bxs-location-plus.svg');
-    -webkit-mask-image: url('../header-img/bxs-location-plus.svg');
+    mask-image: url('../contact-info-img/bxs-location-plus.svg');
+    -webkit-mask-image: url('../contact-info-img/bxs-location-plus.svg');
     width: 24px;
     height: 100%;
   }
@@ -83,8 +171,8 @@
     background-color: var(--white-color);
     top: 0px;
     left: 0px;
-    mask-image: url('../header-img/bxl-telegram.svg');
-    -webkit-mask-image: url('../header-img/bxl-telegram.svg');
+    mask-image: url('../contact-info-img/bxl-telegram.svg');
+    -webkit-mask-image: url('../contact-info-img/bxl-telegram.svg');
     width: 24px;
     height: 100%;
   }
@@ -94,8 +182,8 @@
     background-color: var(--white-color);
     top: 0px;
     left: 0px;
-    mask-image: url('../header-img/viber_icon_160768.svg');
-    -webkit-mask-image: url('../header-img/viber_icon_160768.svg');
+    mask-image: url('../contact-info-img/viber_icon_160768.svg');
+    -webkit-mask-image: url('../contact-info-img/viber_icon_160768.svg');
     width: 24px;
     height: 100%;
   }
@@ -105,8 +193,8 @@
     background-color: var(--white-color);
     top: 0px;
     left: 0px;
-    mask-image: url('../header-img/bxl-github.svg');
-    -webkit-mask-image: url('../header-img/bxl-github.svg');
+    mask-image: url('../contact-info-img/bxl-github.svg');
+    -webkit-mask-image: url('../contact-info-img/bxl-github.svg');
     width: 24px;
     height: 100%;
   }

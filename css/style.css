@@ -14,6 +14,7 @@
 
 
 :root {
+  --index: calc(1vw + 1vh);
   --primary-color: #99C7C7;
   --stack-color: #3cf6f6;
   --white-color: #fff;
@@ -66,7 +67,9 @@
   font-family: "Libre Caslon Text", serif;
   text-decoration: none;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   background: var(--body-color);
   display: flex;

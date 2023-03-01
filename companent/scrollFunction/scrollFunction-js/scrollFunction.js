@@ -2,7 +2,7 @@ window.onscroll = function () {
   scrollFunction();
 };
 function scrollFunction() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+  if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
     document.querySelector('.top__up-btn').style.display = 'block';
   } else {
     document.querySelector('.top__up-btn').style.display = 'none';
