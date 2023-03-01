@@ -43,7 +43,9 @@
     top: 18%;
     left: 1%;
     z-index: 1;
+
   }
+ 
   
   .wrap-btn_active {
     display: block;

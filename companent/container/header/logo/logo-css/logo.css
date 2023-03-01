@@ -8,6 +8,12 @@
     border: solid 6px var(--logo-border-color);
     transition: all 0.5s ease;
     margin-left: 80px;
+    transform: scale(0);
+    transition:  all 1.8s ease 0s;
+  }
+  .logo._active{
+    transform: scale(1);
+    transition: all 0.8s ease 1.5s;
   }
   
   .logo__spiner {
@@ -21,6 +27,7 @@
     animation: spin 2s linear infinite;
     top: -21px;
     left: -21px;
+
   }
   
   .logo__spiner:hover {
