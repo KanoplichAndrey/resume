@@ -10,18 +10,15 @@
   box-shadow: var(--header-box-shadow-color);
   padding: 25px 0px;
   z-index: 1;
-}
-
-/* ._anim10{
-  transform: translate(0px, 120%);
+  /* transform: translate(0px, 100%);
   opacity: 0;
-  transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s; */
 }
-._anim10._active {
-transform: translate(0px, 0px);
-opacity: 1;
-transition: all 0.8s ease 0.4s;
-}  */
+.fixed{
+  /* transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0s; */
+}
 
 .header::before {
   content: '';

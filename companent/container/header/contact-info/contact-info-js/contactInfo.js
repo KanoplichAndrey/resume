@@ -1,5 +1,4 @@
 const animItems = document.querySelectorAll('._anim-items');
-console.log(animItems);
 
 if (animItems.length > 0) {
   window.addEventListener('scroll', animOnScroll);
@@ -39,4 +38,8 @@ setTimeout(() => {
 }, 1000);
   
 }
+
+
+
+
 
